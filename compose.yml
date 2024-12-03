@@ -6,10 +6,8 @@ services:
     user: postgres
     volumes:
       - pgdata:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=nestjs
+    env_file:
+      - docker.env
     ports:
       - 5432:5432
     healthcheck:
