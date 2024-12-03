@@ -2,7 +2,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository with JWT Authentication.
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository with JWT Authentication. Features Swagger for documentation, JWT access tokens and decorators for allowing private or public routers.
 
 ## Installation
 
