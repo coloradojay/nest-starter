@@ -19,10 +19,18 @@ services:
   adminer:
     image: adminer:latest
     restart: always
+    environment:
+      - ADMINER_DESIGN=hydra
     ports:
       - 8080:8080
     depends_on:
       - db
+
+  mailcatcher:
+    image: schickling/mailcatcher:latest
+    ports:
+      - 1080:1080
+      - 1025:1025
 
 volumes:
   pgdata:

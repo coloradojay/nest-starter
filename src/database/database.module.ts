@@ -16,6 +16,7 @@ import { User } from '../users/users.entity';
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_NAME'),
         entities: [User],
+        // For development use
         synchronize: true,
       }),
     }),
