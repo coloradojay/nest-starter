@@ -11,6 +11,7 @@
 🔑 JWT (JSON Web Token) authentication.
 📫 Email based password recovery.
 ✅ Tests with Jest.
+Commitzen
 
 ### Interactive API Documentation
 
@@ -68,4 +69,26 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+```
+
+## Commitizen
+
+Commitizen is a command line utility that makes it easier to create commit messages following the conventional commit format specification.
+
+Use `git cz` instead of git commit to use commitizen.
+
+Add and commit with Commitizen
+
+Configuration file: `.czrc`.
+
+## Commitlint
+
+Commitlint checks if your commit messages meet the conventional commit format.
+
+Configuration file: `.commitlintrc.json`.
+
+In general the pattern mostly looks like this:
+
+```bash
+type(scope?): subject #scope is optional
 ```
