@@ -85,6 +85,14 @@
       "html",
       "text"
     ],
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "branches": 42,
+        "functions": 57,
+        "lines": 41,
+        "statements": 42
+      }
+    }
   }
 }

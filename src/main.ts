@@ -10,6 +10,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
   app.use(helmet());
   app.use(compression());
+  app.enableCors();
 
   const config = new DocumentBuilder().setVersion('1.0').build();
   const documentFactory = () => SwaggerModule.createDocument(app, config);
