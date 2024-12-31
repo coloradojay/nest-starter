@@ -39,7 +39,7 @@ export default [
 
       parserOptions: {
         project: 'tsconfig.json',
-        tsconfigRootDir: '/Users/jason/Documents/playground/nest-starter',
+        tsconfigRootDir: __dirname,
       },
     },
 
